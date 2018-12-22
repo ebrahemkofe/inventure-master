@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".youssef.Contact_Us">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ac636e72"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+
+                android:gravity="left"
+
+                android:text="CONTACT INFO"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:text="If you have any query, feedback or proposal, we would really like to hear from you. Please contact at any time and we'll get back to you within 24 hours."
+                android:textColor="#FFFFFF" />
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+
+                    android:layout_marginRight="10dp"
+                    android:onClick="mail"
+                    android:src="@drawable/gmail" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mail"
+                    android:text="sales@myaquar.com"
+
+
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="mail"
+
+
+                    android:src="@drawable/gmail" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mail"
+                    android:text="info@myaquar.com"
+
+
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="gotoweb"
+                    android:src="@drawable/grid" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="gotoweb"
+                    android:text="www.myaquar.com"
+
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="left"
+
+                android:text="WRITE US"
+                android:textColor="#FFFFFF" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/editshape"
+                android:drawableLeft="@drawable/manuser"
+                android:ems="10"
+                android:hint=" enter your name"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8395a7"
+                android:textStyle="bold"
+                app:errorEnabled="true" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/editshape"
+                android:drawableLeft="@drawable/gmail"
+                android:ems="10"
+                android:hint=" enter your mail"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8395a7"
+                android:textStyle="bold"
+                app:errorEnabled="true" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/editshape"
+                android:drawableLeft="@drawable/manuser"
+                android:ems="10"
+                android:hint=" enter your phone"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8395a7"
+                android:textStyle="bold"
+                app:errorEnabled="true" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/coment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/editshape"
+                android:drawableLeft="@drawable/edit"
+                android:ems="10"
+                android:hint=" enter your comment"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8395a7"
+                android:textStyle="bold"
+                app:errorEnabled="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#8395a7"
+                android:gravity="bottom"
+                android:onClick="mail"
+                android:layout_gravity="center"
+                android:text="    Send Message     "
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

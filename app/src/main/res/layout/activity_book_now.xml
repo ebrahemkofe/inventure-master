@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".findhome_amir.BookNow">
+
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:src="@drawable/download1"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_counter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/firstItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_building" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="Home/Villa"
+                android:textColor="#5eaefc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/firstItem"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_bedrooms" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="3 Bedrooms"
+                android:textColor="#5eaefc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/secondItem"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="$ 6000"
+                android:textColor="#f53d3d"
+                android:textSize="25sp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="Instalment"
+                android:textColor="#565a60" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondItem"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="15dp"
+                android:text="Description"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/LongText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:maxLines="6"
+                android:text="@string/des" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Details"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="New Cairo , Cairo , Egypt" />
+
+                <RatingBar
+                    android:id="@+id/book_rating_bar"
+                    style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="5dp"
+                    android:isIndicator="true"
+                    android:progressTint="#0081ff"
+                    android:rating="3" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout xmlns:rfal="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main_rfal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        rfal:rfal_frame_alpha="0.7"
+        rfal:rfal_frame_color="#ffffff">
+
+        <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionButton xmlns:rfab="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_main_rfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="8dp"
+            rfab:rfab_color_normal="#37474f"
+            rfab:rfab_color_pressed="#263238"
+            rfab:rfab_drawable="@drawable/rfab__drawable_rfab_default"
+            rfab:rfab_shadow_color="#999999"
+            rfab:rfab_shadow_dx="0dp"
+            rfab:rfab_shadow_dy="5dp"
+            rfab:rfab_shadow_radius="7dp"
+            rfab:rfab_size="normal" />
+    </com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout>
+</android.support.design.widget.CoordinatorLayout><!--<android.support.v4.view.ViewPager--><!--android:id="@+id/container"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+
+    <!--<android.support.v4.view.ViewPager--><!--android:id="@+id/viewPage"--><!--android:layout_width="match_parent"--><!--android:layout_height="200dp"--><!--android:layout_marginTop="75dp" />-->

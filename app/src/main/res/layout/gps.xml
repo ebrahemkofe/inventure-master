@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#2F4159"
+    tools:context=".maps_amir.MapsActivity">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:padding="5dp"
+            android:id="@+id/btnRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant"
+            android:background="#009A9A"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"/>
+        <Button
+            android:padding="5dp"
+            android:id="@+id/btnHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital"
+            android:background="#009A9A"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"/>
+        <Button
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:id="@+id/btnSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School"
+            android:background="#009A9A"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+</FrameLayout>

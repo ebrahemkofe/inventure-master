@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="accountFragment"
+    android:background="@android:color/white">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="accountFragment"
+    android:background="@android:color/white"
+    tools:context=".ali.AccountFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_margin="10dp"
+        android:id="@+id/setup_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:elevation="15dp"
+        android:src="@drawable/kkk" />
+
+
+        <TextView
+            android:textColor="#000"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karim Nakhle"
+            android:layout_margin="10dp"
+
+            />
+
+
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:layout_margin="5dp"
+            android:textColor="#f00"
+            android:textSize="18sp"
+            />
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_margin="5dp"
+
+                />
+
+            <TextView
+                android:textColor="#999"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Egypt"
+                android:layout_margin="5dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="#000"
+
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area Unit"
+                android:layout_margin="5dp"
+
+                />
+
+            <TextView
+                android:textColor="#999"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Square meter"
+                android:layout_margin="5dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="#000"
+
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currency"
+                android:layout_margin="5dp"
+
+                />
+
+            <TextView
+                android:textColor="#999"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EGP"
+                android:layout_margin="5dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
+</LinearLayout>

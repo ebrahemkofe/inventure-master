@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/model_relative"
+    >
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/model_main_image"
+               android:layout_width="match_parent"
+               android:layout_height="250dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginStart="0dp"
+               android:layout_marginTop="0dp"
+               android:background="@drawable/villa"
+               android:scaleType="centerCrop"
+
+
+               />
+           <ImageButton
+               android:id="@+id/model_like"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="215dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/like_off"
+               android:background="@drawable/like"
+               android:layout_marginLeft="280dp"
+
+               />
+
+
+       </RelativeLayout>
+
+
+            <RatingBar
+                android:id="@+id/book_rating_ba"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:progressTint="#F00"
+                android:rating="3.5"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                />
+    <TextView
+        android:id="@+id/model_txt_main_place_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="New Cairo"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/model_txt_price"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="7000 EGP"
+            android:textSize="22sp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="per meter"
+            android:text="per meter"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/model_txt_duration"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="4 Year"
+            android:textSize="22sp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="installment"
+            android:text="installment"
+            />
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

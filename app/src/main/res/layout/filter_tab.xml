@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_gravity="center">
+
+
+
+    <ImageView
+        android:id="@+id/close_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#fafafa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp">
+
+                <TextView
+                    android:id="@+id/filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:text="Filter"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <ImageView
+                    android:id="@+id/filter_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_filter_list_black_24dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/start_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Price"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <EditText
+                        android:id="@+id/edite_start_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:hint="Enter Start Price"
+                        android:paddingLeft="7dp"
+                        android:inputType="number"
+                        android:textColor="#000"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/end_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End Price"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <EditText
+                        android:id="@+id/edite_end_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:hint="Enter End Price"
+                        android:paddingLeft="7dp"
+                        android:inputType="number"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/include"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Include"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+
+
+
+                <CheckBox
+                    android:id="@+id/apartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apartment"
+                    android:textColor="#000"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="145dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/duplex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duplex"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textColor="#000"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="7dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="145dp"/>
+
+                <CheckBox
+                    android:id="@+id/pension"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pension"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textColor="#000"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginTop="7dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="145dp"/>
+
+                <CheckBox
+                    android:id="@+id/studio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Studio"
+                    android:textColor="#000"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginTop="7dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="145dp"/>
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+
+
+                    <Button
+                        android:id="@+id/reset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reset"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="17dp"
+
+                        android:textStyle="bold"
+                        android:background="@drawable/shape_btn"
+                         />
+
+                    <Button
+                        android:id="@+id/search"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search"
+                        android:layout_marginTop="17dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/shape_btn2"/>
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/shape_btn2"
+                        android:layout_marginTop="17dp"
+                        android:text="Save" />
+                </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
